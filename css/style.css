@@ -1,0 +1,529 @@
+/*==========GRID==========*/
+.container-full {
+	width: 100%;
+}
+.container {
+	width: 92%;
+	margin-left: 4%;
+	margin-right: 4%;
+	position: relative;
+}
+.bar {
+	padding-top: 20px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.g1,
+.g2,
+.g3,
+.g4,
+.g5,
+.g6,
+.g7,
+.g8,
+.g9,
+.g10,
+.g11,
+.g12 {
+	display: inline;
+	float: left;
+	position: relative;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+.g1 {
+	width: 6.333%;
+}
+.g2 {
+	width: 14.667%;
+}
+.g3 {
+	width: 23.0%;
+}
+.g4 {
+	width: 31.333%;
+}
+.g5 {
+	width: 39.667%;
+}
+.g6 {
+	width: 48.0%;
+}
+.g7 {
+	width: 56.333%;
+}
+.g8 {
+	width: 64.667%;
+}
+.g9 {
+	width: 73.0%;
+}
+.g10 {
+	width: 81.333%;
+}
+.g11 {
+	width: 89.667%;
+}
+.g12 {
+	width: 98.0%;
+}
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+.lg {
+	margin-left: 0%;
+	padding-left: 1%;
+}
+.rg {
+	margin-right: 0%;
+	padding-right: 1%;
+}
+
+/*==========STYLE==========*/
+/*---Teks---*/
+@font-face{
+	font-family:segoe ui;
+	src: url(../font/segoeui.ttf);
+}
+body {
+	margin: 0;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: segoe ui, open sans, helvetica;
+	color: #FFFDF8;
+}
+h1,h2,h3 {
+	font-family: segoe ui, open sans;
+}
+h1 {
+	font-size: 3em;
+}
+h2 {
+	font-size: 2.25em;
+}
+h3 {
+	font-size: 1.75em;
+}
+h4 {
+	font-size: 1.125em;
+}
+p {
+	font-size: 0.875em;
+}
+a {
+	font-size: inherit;
+	text-decoration: none;
+	font-weight: 700;
+	color: inherit;
+}
+a:hover {
+	opacity: 0.8;
+}
+.light {
+	font-weight: 100;
+}
+.bold {
+	font-weight: 700;
+}
+.normal {
+	font-weight: 400;
+}
+.center {
+	text-align: center;
+}
+.left {
+	text-align: left;
+}
+.right {
+	text-align: right;
+}
+
+/*---Layout---*/
+.fresh {
+	padding: 0;
+	margin: 0;
+}
+.rightf {
+	float: right;
+}
+.leftf {
+	float: left;
+}
+
+/*---Section---*/
+#banner {
+	width: 100%;
+	height: 99vh;
+	background:
+		linear-gradient(
+	    rgba(181, 240, 219, 0.4), 
+	    rgba(181, 240, 219, 0.4)
+	    ),
+	    url(../img/bg.jpg);
+	background-size: 100% 100%;
+	background-position: center;
+	float: left;
+}
+.content {
+	width: 100%;
+	background-color: #EFB071;
+	float: left;
+}
+.paralax {
+	width: 100%;
+	background-color: #D63835;
+	float: left;
+	height: 600px;
+}
+/*
+#top {
+	width: 100%;
+	height: 60px;
+	background-color: #005A55;
+	position: fixed;
+	z-index: 1000;
+}
+.sidebar {
+	width: 20%;
+	height: 100vh;
+	top: 60px;
+	background-color: #262732;
+	float: left;
+	text-align: center;
+	position: fixed;
+}
+*/
+
+/*---Elemen---*/
+/*Ukuran*/
+.strech {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.hd {
+	width: 100%;
+	padding-bottom: 56.25%;
+	position: relative;
+}
+.sd {
+	width: 100%;
+	padding-bottom: 75%;
+	position: relative;
+}
+.sq {
+	width: 100%;
+	padding-bottom: 100%;
+	position: relative;
+}
+
+/*Bentuk*/
+.round {
+	border-radius: 5px;
+}
+.circle {
+	border-radius: 100%;
+}
+
+/*Margin*/
+.space {
+	padding-bottom: 50px;
+	position: relative;
+	float: left;
+}
+
+/*Teks*/
+.caption {
+	position: inherit;
+	padding-top: 15%;
+	text-shadow: 5px 5px 10px rgba(0,0,0,1);
+}
+.title {
+	font-size: 9em;
+	font-family: C, georgia;
+}
+.subtitle {
+	margin-top: -1em;
+	font-size: 2.5em;
+}
+
+/*Bangun*/
+.segitiga-a{
+	margin-top: -20vh;
+	width: 0; 
+	height: 0; 
+			
+	border-bottom: 20vh solid #EFB071; 
+	border-left: 200vh solid transparent;
+	float: right;
+}
+.segitiga-b{
+	width: 0; 
+	height: 0; 
+			
+	border-top: 20vh solid #EFB071; 
+	border-right: 200vh solid transparent;
+	float: left;
+}
+.aktivitas {
+	width: 80%;
+	padding-bottom: 80%;
+	margin-left: 10%;
+	margin-bottom: 10%;
+}
+
+
+/*Uji Coba*/
+.buton  {
+	background-color: #00948A;
+	border: 0px;
+	padding: 0.4em;
+	margin: 0.4em;
+	font-size: 1.125em;
+	font-weight: 400;
+	color: #FFFDF8;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.buton:hover  {
+	opacity: 0.8;
+}
+
+/*==========COPY DARI SIMANIS==========*/
+/*---Input---
+.buton  {
+	background-color: #00948A;
+	border: 0px;
+	padding: 0.4em;
+	margin: 0.4em;
+	font-size: 1.125em;
+	font-weight: 400;
+	color: #FFFDF8;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.buton:hover  {
+	opacity: 0.8;
+}
+
+.txt  {
+	width: 80%;
+	background-color: #FFFDF8;
+	border: 1px solid #262732;
+	padding: 0.4em;
+	margin: 0.4em;
+	font-size: 1.125em;
+	font-weight: 400;
+	color: #262732;
+	border-radius: 5px;
+	opacity: 0.9;
+}
+
+.txt:hover {
+	opacity: 1;
+}
+*/
+
+/*---Top---
+.menu-bt {
+	font-size: 1.75em;
+	padding: 10px 0;
+	margin-top: 120px;
+	display: none;
+	cursor: pointer;
+}
+
+input[type=checkbox]{
+    display: none;
+}
+
+.side-menu {
+	width: 100%;
+}
+.side-menu ul {
+	list-style-type: none;
+	padding: 0;
+}
+.side-menu ul li {
+	display: list-item;
+	background-color: #00948A;
+	margin-bottom: 0.4em;
+	padding: 0.4em;
+	font-size: 1.125em;
+	font-weight: 100;
+}
+.side-menu ul li a {
+	text-decoration: none;
+	color: inherit;
+}
+*/
+
+/*---Login---
+#box-login {
+	margin-top: 70%;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#box-login input[type=text], #box-login input[type=password] {
+  border: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.75);
+}
+.login-form {
+  width: 97%;
+  margin-top: 10px;
+  height: 1.75em;
+  font-size: 1.125em;
+  padding: 1.5%;
+  background-color: #FFFDF8;
+  color: #262A3B;
+  border-radius: 8px;
+}
+.login-button {
+  width: 100%;
+  margin-top: 20px;
+  height: 2.25em;
+  font-size: 1.125em;
+  color: #FFFDF8;
+  background-color: #00948A;
+  border: rgba(255,255,255,0.9);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.login-button:hover {
+  background-color: #005A55;
+}
+*/
+
+/*---Admin---
+.logo {
+	padding-left: 1%;
+	font-size: 2.5em;
+	margin-top: 0em;
+	float: left;
+}
+.top-box {
+	width: 60px;
+	height: 60px;
+	float: right;
+}
+.foto {
+	width: 100%;
+	height: 100%;
+}
+.user-nama {
+	padding-right: 1%;
+	font-size: 1.75em;
+	margin-top: 0.3em;
+	float: right;
+}
+.logout {
+	font-size: 0.8em;
+	text-align: center;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	margin-right: -60px;
+	color: #000309;
+	line-height: 0.8em;
+	background-color: rgba(255,255,255,0.5);
+	height: auto;
+	display: none;
+}
+.user-pic:hover ~ .logout, .logout:hover {
+	display: block;
+	cursor: pointer;
+}
+.find-form {
+  width: 90%;
+  margin-top: 0.25em;
+  margin-bottom: 1em;
+  height: 1em;
+  font-size: 1.125em;
+  padding: 0.5em;
+  background-color: #FFFDF8;
+  color: #262732;
+  border: 0px solid #262732;
+  opacity: 0.9;
+}
+.find-btn {
+	position: absolute;
+	margin: 0.3em -2.5em;
+	height: 2em;
+	font-size: 1.125em;
+	background-color: rgba(0,0,0,0);
+	border: 0px;
+	cursor: pointer;
+}
+.find-form:hover, .find-form:focus, .find-btn:hover {
+	opacity: 1;
+}
+.float-circle {
+	width: 60px;
+	height: 60px;
+	border-radius: 60px;
+	background-color: #00948A;
+	top: 85%;
+	right: 3%;
+	position: fixed;
+	z-index: 1;
+}
+*/
+
+/*---Table---
+.table-fold {
+	width: 98%;
+	margin-left: 1%;
+	margin-right: 1%;
+	position: relative;
+	z-index: 1;
+}
+.modern-table {
+	width: 100%;
+	text-align: center;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+.modern-table th {
+	font-size: 1.125em;
+	color: #FFFDF8;
+	background-color: #005A55;
+	padding: 0.6em;
+}
+.modern-table tr {
+	outline: 0px;
+	border: 0px;
+}
+.modern-table tr:nth-child(even) {
+	background-color: #FFFDF8;
+}
+.modern-table tr:nth-child(odd) {
+	background-color: #b3e6c8;
+}
+.modern-table td {
+	padding: 0.3em;
+}
+*/
+
+/*---Login---
+.bottom-box {
+	width: 60px;
+	height: 60px;
+	float: left;
+	position: relative;
+}
+.map {
+	width: 100%;
+	padding-bottom: 31.25%;
+	position: relative;
+}
+*/
