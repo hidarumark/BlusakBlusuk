@@ -20,6 +20,30 @@
 	}
 
 	/*---Style---*/
+	header ul#right {
+		margin: -60px 20px 0px 0px;
+		padding-top: 10px;
+		width: 100%;
+		height: 100vh;
+		text-align: left;
+		background-color: rgba(255,255,255,0.5);
+	}
+	header ul#right li {
+		display: list-item;
+		height: 40px;
+	}
+	header ul#right li#mo-nav {
+		display: block;
+	}
+	header.smaller ul li a{
+		font-size: 1.3em;
+	}
+	
+	/* Disable This to Show Menu*/
+	header ul#right {
+		display: none;
+	}
+		
 	.modal-copy {
 		max-height: 300px;
 	}

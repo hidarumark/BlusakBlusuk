@@ -14,9 +14,11 @@
 	<header>
 	 <div class="container">
 	 	<ul id="left">
+      <li><a href="#">|||</a></li>
 	 		<li><a href="#">Blusak-Blusuk !</a></li>
 	 	</ul>
 		<ul id="right">
+      <li id="mo-nav"><a href="#"><- Back</a></li>
 	 		<li><a href="#">Home</a></li>
 	 		<li><a href="#">Destinasi</a></li>
 	 		<li><a href="#">Aktifitas</a></li>
@@ -68,7 +70,9 @@
     </div> <!-- Akhir Section-->
 
     <div id="paralax1" class="paralax">
-      <div class="segitiga-b"></div>
+      <div class="gfull fresh overhidden">
+        <div class="segitiga-b"></div>
+      </div>
       <div class="container">
         <div class="g12">
           
@@ -105,7 +109,9 @@
     </div> <!-- Akhir Section-->
 
     <div id="paralax2" class="paralax">
-      <div class="segitiga-b"></div>
+      <div class="gfull fresh overhidden">
+        <div class="segitiga-b"></div>
+      </div>
       <div class="container">
         <div class="g12">
           
@@ -136,7 +142,9 @@
     </div> <!-- Akhir Section-->
 
     <div id="kontak" class="paralax">
-      <div class="segitiga-b"></div>
+      <div class="gfull fresh overhidden">
+        <div class="segitiga-b"></div>
+      </div>
       <div class="container">
         <div class="g12">
           <h1 class="right">Kontak</h1>
@@ -196,7 +204,7 @@
 	    function init() {
 	        window.addEventListener('scroll', function(e){
 	            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-	                shrinkOn = 10,
+	                shrinkOn = 100,
 	                header = document.querySelector("header");
 	            if (distanceY > shrinkOn) {
 	                classie.add(header,"smaller");
