@@ -123,9 +123,9 @@ a {
 	font-weight: 700;
 	color: inherit;
 }
-a:hover {
+/*a:hover {
 	opacity: 0.8;
-}
+}*/
 .light {
 	font-weight: 100;
 }
@@ -160,16 +160,15 @@ a:hover {
 /*---Section---*/
 #banner {
 	width: 100%;
-	height: 99vh;
+	height: 100vh;
 	background:
 		linear-gradient(
-	    rgba(181, 240, 219, 0.4), 
-	    rgba(181, 240, 219, 0.4)
+	    rgba(255, 255, 255, 0.2),
+	    rgba(255, 255, 255, 0.2)
 	    ),
-	    url(../img/bg.jpg);
-	background-size: 100% 100%;
+	    url(../img/sunset.jpg) no-repeat fixed;
+	background-size: 100% auto;
 	background-position: center;
-	float: left;
 }
 .content {
 	width: 100%;
@@ -181,6 +180,24 @@ a:hover {
 	background-color: #D63835;
 	float: left;
 	height: 600px;
+}
+#paralax1 {
+	background:
+		linear-gradient(
+	    rgba(255, 255, 255, 0.2),
+	    rgba(255, 255, 255, 0.2)
+	    ),
+	    url(../img/bg.jpg) no-repeat fixed;
+		background-size: 100% auto;
+}
+#paralax2 {
+	background:
+		linear-gradient(
+	    rgba(255, 255, 255, 0.2),
+	    rgba(255, 255, 255, 0.2)
+	    ),
+	    url(../img/sunset.jpg) no-repeat fixed;
+		background-size: 100% auto;
 }
 /*
 #top {
@@ -247,7 +264,7 @@ a:hover {
 }
 .title {
 	font-size: 9em;
-	font-family: C, georgia;
+	font-family: Chapparal pro, georgia;
 }
 .subtitle {
 	margin-top: -1em;
@@ -256,20 +273,20 @@ a:hover {
 
 /*Bangun*/
 .segitiga-a{
-	margin-top: -20vh;
+	margin-top: -10vh;
 	width: 0; 
 	height: 0; 
 			
-	border-bottom: 20vh solid #EFB071; 
-	border-left: 200vh solid transparent;
+	border-bottom: 10vh solid #EFB071; 
+	border-left: 220vh solid transparent;
 	float: right;
 }
 .segitiga-b{
 	width: 0; 
 	height: 0; 
 			
-	border-top: 20vh solid #EFB071; 
-	border-right: 200vh solid transparent;
+	border-top: 10vh solid #EFB071; 
+	border-right: 210vh solid transparent;
 	float: left;
 }
 .aktivitas {
@@ -297,233 +314,59 @@ a:hover {
 	opacity: 0.8;
 }
 
-/*==========COPY DARI SIMANIS==========*/
-/*---Input---
-.buton  {
-	background-color: #00948A;
-	border: 0px;
-	padding: 0.4em;
-	margin: 0.4em;
-	font-size: 1.125em;
-	font-weight: 400;
-	color: #FFFDF8;
-	cursor: pointer;
-	border-radius: 5px;
+.round img {
+	opacity: .5;
+	transition: opacity .5s ease;
 }
 
-.buton:hover  {
-	opacity: 0.8;
-}
-
-.txt  {
-	width: 80%;
-	background-color: #FFFDF8;
-	border: 1px solid #262732;
-	padding: 0.4em;
-	margin: 0.4em;
-	font-size: 1.125em;
-	font-weight: 400;
-	color: #262732;
-	border-radius: 5px;
-	opacity: 0.9;
-}
-
-.txt:hover {
+.round img:hover {
 	opacity: 1;
-}
-*/
-
-/*---Top---
-.menu-bt {
-	font-size: 1.75em;
-	padding: 10px 0;
-	margin-top: 120px;
-	display: none;
-	cursor: pointer;
+	transition: opacity .5s ease;
 }
 
-input[type=checkbox]{
-    display: none;
-}
-
-.side-menu {
+header {
+	display: inline-block;
+	float: left;
 	width: 100%;
+	height: 4em;
+	position: fixed;
+	z-index: 2;
+	background-color: #EFB071;
+	transition: height 0.2s;
+	-webkit-transition: height 0.2s;
+	-moz-transition: height 0.2s;
+	-ms-transition: height 0.2s;
+	-o-transition: height 0.2s;
 }
-.side-menu ul {
+header ul {
 	list-style-type: none;
 	padding: 0;
 }
-.side-menu ul li {
-	display: list-item;
-	background-color: #00948A;
-	margin-bottom: 0.4em;
-	padding: 0.4em;
-	font-size: 1.125em;
-	font-weight: 100;
+
+header ul li {
+	display: inline;
+	height: 50px;
 }
-.side-menu ul li a {
+
+header ul li a {
 	text-decoration: none;
-	color: inherit;
+	font-size: 1.3em;
+	color: #5C5C5C;
+	z-index: 3;
+	transition: font 0.3s ease
 }
-*/
-
-/*---Login---
-#box-login {
-	margin-top: 70%;
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
+header.smaller ul li a{
+	font-size: 1em;
 }
-#box-login input[type=text], #box-login input[type=password] {
-  border: rgba(255,255,255,0.9);
-  background: rgba(255,255,255,0.75);
-}
-.login-form {
-  width: 97%;
-  margin-top: 10px;
-  height: 1.75em;
-  font-size: 1.125em;
-  padding: 1.5%;
-  background-color: #FFFDF8;
-  color: #262A3B;
-  border-radius: 8px;
-}
-.login-button {
-  width: 100%;
-  margin-top: 20px;
-  height: 2.25em;
-  font-size: 1.125em;
-  color: #FFFDF8;
-  background-color: #00948A;
-  border: rgba(255,255,255,0.9);
-  border-radius: 8px;
-  cursor: pointer;
-}
-.login-button:hover {
-  background-color: #005A55;
-}
-*/
-
-/*---Admin---
-.logo {
-	padding-left: 1%;
-	font-size: 2.5em;
-	margin-top: 0em;
+header ul#left {
 	float: left;
 }
-.top-box {
-	width: 60px;
-	height: 60px;
+header ul#right {
 	float: right;
 }
-.foto {
-	width: 100%;
-	height: 100%;
+header ul#right a {
+	padding-left: 1em;
 }
-.user-nama {
-	padding-right: 1%;
-	font-size: 1.75em;
-	margin-top: 0.3em;
-	float: right;
+header.smaller {
+	height: 3.5em;
 }
-.logout {
-	font-size: 0.8em;
-	text-align: center;
-	padding-top: 2em;
-	padding-bottom: 2em;
-	margin-right: -60px;
-	color: #000309;
-	line-height: 0.8em;
-	background-color: rgba(255,255,255,0.5);
-	height: auto;
-	display: none;
-}
-.user-pic:hover ~ .logout, .logout:hover {
-	display: block;
-	cursor: pointer;
-}
-.find-form {
-  width: 90%;
-  margin-top: 0.25em;
-  margin-bottom: 1em;
-  height: 1em;
-  font-size: 1.125em;
-  padding: 0.5em;
-  background-color: #FFFDF8;
-  color: #262732;
-  border: 0px solid #262732;
-  opacity: 0.9;
-}
-.find-btn {
-	position: absolute;
-	margin: 0.3em -2.5em;
-	height: 2em;
-	font-size: 1.125em;
-	background-color: rgba(0,0,0,0);
-	border: 0px;
-	cursor: pointer;
-}
-.find-form:hover, .find-form:focus, .find-btn:hover {
-	opacity: 1;
-}
-.float-circle {
-	width: 60px;
-	height: 60px;
-	border-radius: 60px;
-	background-color: #00948A;
-	top: 85%;
-	right: 3%;
-	position: fixed;
-	z-index: 1;
-}
-*/
-
-/*---Table---
-.table-fold {
-	width: 98%;
-	margin-left: 1%;
-	margin-right: 1%;
-	position: relative;
-	z-index: 1;
-}
-.modern-table {
-	width: 100%;
-	text-align: center;
-	border-collapse: collapse;
-	table-layout: fixed;
-}
-
-.modern-table th {
-	font-size: 1.125em;
-	color: #FFFDF8;
-	background-color: #005A55;
-	padding: 0.6em;
-}
-.modern-table tr {
-	outline: 0px;
-	border: 0px;
-}
-.modern-table tr:nth-child(even) {
-	background-color: #FFFDF8;
-}
-.modern-table tr:nth-child(odd) {
-	background-color: #b3e6c8;
-}
-.modern-table td {
-	padding: 0.3em;
-}
-*/
-
-/*---Login---
-.bottom-box {
-	width: 60px;
-	height: 60px;
-	float: left;
-	position: relative;
-}
-.map {
-	width: 100%;
-	padding-bottom: 31.25%;
-	position: relative;
-}
-*/

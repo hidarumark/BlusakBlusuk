@@ -11,6 +11,20 @@
   </head>
 
   <body>
+	<header>
+	 <div class="container">
+	 	<ul id="left">
+	 		<li><a href="#">Blusak-Blusuk !</a></li>
+	 	</ul>
+		<ul id="right">
+	 		<li><a href="#">Home</a></li>
+	 		<li><a href="#">Destinasi</a></li>
+	 		<li><a href="#">Aktifitas</a></li>
+	 		<li><a href="#">Tentang</a></li>
+	 		<li><a href="#">Kontak</a></li>
+	 	</ul>
+	 </div>
+	</header>	
     <div id="banner">
       <div class="container">
         <div class="g12">
@@ -176,5 +190,24 @@
       <div class="overlay"></div>
     </div>
 
+	<script src="js/classie.js"></script>
+	
+	<script>
+	    function init() {
+	        window.addEventListener('scroll', function(e){
+	            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+	                shrinkOn = 200,
+	                header = document.querySelector("header");
+	            if (distanceY > shrinkOn) {
+	                classie.add(header,"smaller");
+	            } else {
+	                if (classie.has(header,"smaller")) {
+	                    classie.remove(header,"smaller");
+	                }
+	            }
+	        });
+	    }
+	    window.onload = init();
+	</script>   
     </body>
 </html>
