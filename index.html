@@ -13,17 +13,17 @@
   <body>
 	<header>
 	 <div class="container">
-	 	<ul id="left">
-      <li><a href="#">|||</a></li>
+	 	<ul id="nav-left">
+      <li id="mo-btn">|||</li>
 	 		<li><a href="#">Blusak-Blusuk !</a></li>
 	 	</ul>
-		<ul id="right">
-      <li id="mo-nav"><a href="#"><- Back</a></li>
-	 		<li><a href="#">Home</a></li>
-	 		<li><a href="#">Destinasi</a></li>
-	 		<li><a href="#">Aktifitas</a></li>
-	 		<li><a href="#">Tentang</a></li>
-	 		<li><a href="#">Kontak</a></li>
+		<ul id="nav-right" class="nav-hide">
+      <li id="mo-nav"><- Close</li>
+	 		<li><a href="#banner">Home</a></li>
+	 		<li><a href="#destinasi">Destinasi</a></li>
+	 		<li><a href="#aktivitas">Aktivitas</a></li>
+	 		<li><a href="#tentang">Tentang</a></li>
+	 		<li><a href="#kontak">Kontak</a></li>
 	 	</ul>
 	 </div>
 	</header>	
@@ -199,12 +199,13 @@
     </div>
 
 	<script src="js/classie.js"></script>
+  <script src="js/jquery-1.11.2.min.js"></script>
 	
 	<script>
 	    function init() {
 	        window.addEventListener('scroll', function(e){
 	            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-	                shrinkOn = 100,
+	                shrinkOn = 400,
 	                header = document.querySelector("header");
 	            if (distanceY > shrinkOn) {
 	                classie.add(header,"smaller");
@@ -216,6 +217,14 @@
 	        });
 	    }
 	    window.onload = init();
-	</script>   
+	</script>
+  <script>
+    $("#mo-btn").click(function() {
+        $("#nav-right").removeClass("nav-hide")
+    });    
+    $("#mo-nav").click(function() {
+        $("#nav-right").addClass("nav-hide")
+    });    
+  </script>   
     </body>
 </html>
