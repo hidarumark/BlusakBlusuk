@@ -112,7 +112,7 @@ body {
 	font-size: 16px;
 	font-weight: 400;
 	font-family: segoe ui, open sans, helvetica;
-	color: #FFFDF8;
+	color: #5C5C5C;
 }
 h1,h2,h3 {
 	font-family: 'roboto slab', open sans;
@@ -185,18 +185,20 @@ a {
 	    rgba(255, 255, 255, 0.2)
 	    ),
 	    url(../img/sunset.jpg) no-repeat fixed; */
-	background-color: rgba(255, 255, 255, 0.4);
+	background: linear-gradient(
+	    rgba(0, 0, 0, 0.6),
+	    rgba(255, 255, 255, 0.1)
+	    );
 	background-size: 100% 100%;
 	background-position: center;
 }
 .content {
 	width: 100%;
-	background-color: #EFB071;
+	background-color: #D0EC65;
 	float: left;
 }
 .paralax {
 	width: 100%;
-	background-color: #D63835;
 	float: left;
 	height: 600px;
 	text-align: center;
@@ -204,19 +206,22 @@ a {
 .paralax h1.highlight{
 	font-size: 5em;
 	font-weight: 400;
-	padding-top: 1em;
+	padding-top: 5%;
+	margin-bottom: 1%;
+	color: #FFFDF8;
 }
 .paralax p.desc {
 	font-size: 2em;
+	color: #FFFDF8;
 }
 #paralax1 {
 	width: 100%;
 	background:
 		linear-gradient(
-	    rgba(255, 255, 255, 0.4),
-	    rgba(255, 255, 255, 0.4)
+	    rgba(255, 255, 255, 0.3),
+	    rgba(255, 255, 255, 0.3)
 	    ),
-	    url(../img/bg.jpg) no-repeat fixed;
+	    url(../img/ngobaran.jpg) no-repeat fixed;
 		background-size: 100% 100%;
 		background-position: center;
 }
@@ -224,12 +229,22 @@ a {
 	width: 100%;
 	background:
 		linear-gradient(
-	    rgba(255, 255, 255, 0.4),
-	    rgba(255, 255, 255, 0.4)
+	    rgba(255, 255, 255, 0.3),
+	    rgba(255, 255, 255, 0.3)
 	    ),
 	    url(../img/sunset.jpg) no-repeat fixed;
 		background-size: 100% 100%;
 }
+#kontak {
+	background:
+		linear-gradient(
+	    rgba(255, 255, 255, 0.5),
+	    rgba(255, 255, 255, 0.5)
+	    ),
+	    url(../img/map.png);
+		background-size: 100% 100%;
+		background-position: center;
+}	
 /*
 #top {
 	width: 100%;
@@ -308,7 +323,7 @@ a {
 	width: 0; 
 	height: 0; 
 			
-	border-bottom: 11vh solid #EFB071; 
+	border-bottom: 11vh solid #D0EC65; 
 	border-left: 220vh solid transparent;
 	float: right;
 }
@@ -316,7 +331,7 @@ a {
 	width: 0; 
 	height: 0; 
 			
-	border-top: 11vh solid #EFB071; 
+	border-top: 11vh solid #D0EC65; 
 	border-right: 220vh solid transparent;
 	float: left;
 }
@@ -372,8 +387,9 @@ header {
 }
 header.smaller {
 	position: fixed;
-	background-color: #EFB071;
+	background-color: #EDF252;
 	height: 60px;
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2)
 }
 header ul {
 	list-style-type: none;

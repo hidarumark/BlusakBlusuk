@@ -48,6 +48,13 @@
 	.nav-hide {
 		display: none;
 	}
+	.paralax h1.highlight{
+		font-size: 3em;
+		padding-top: 13%;
+	}
+	.paralax p.desc {
+		font-size: 1.5em;
+	}
 		
 	.modal-copy {
 		max-height: 300px;
@@ -60,11 +67,11 @@
 	}
 	.segitiga-a{
 		margin-top: -14vh;
-		border-bottom: 15vh solid #EFB071;
+		border-bottom: 15vh solid #D0EC65;
 		border-left: 64vh solid transparent;
 	}
 	.segitiga-b{	
-		border-top: 15vh solid #EFB071;
+		border-top: 15vh solid #D0EC65;
 		border-right: 60vh solid transparent;
 	}
 
