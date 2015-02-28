@@ -222,11 +222,9 @@
 	                header = document.querySelector("header");
 	            if (distanceY > shrinkOn) {
 	                classie.add(header,"smaller");
-                  classie.add(header,"invert");
 	            } else {
 	                if (classie.has(header,"smaller")) {
 	                    classie.remove(header,"smaller");
-                      classie.remove(header,"invert");
 	                }
 	            }
 	        });
