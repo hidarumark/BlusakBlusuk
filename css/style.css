@@ -194,7 +194,7 @@ a {
 }
 .content {
 	width: 100%;
-	background-color: #D0EC65;
+	background-color: #efece3;
 	float: left;
 }
 .paralax {
@@ -248,7 +248,7 @@ a {
 		background-position: center;
 }	
 #footer-copy {
-	background-color: #EDF252;
+	background-color: #e1dccc;
 }
 #copy-content {
 	float: left;
@@ -334,7 +334,7 @@ a {
 	width: 0; 
 	height: 0; 
 			
-	border-bottom: 11vh solid #D0EC65; 
+	border-bottom: 11vh solid #efece3; 
 	border-left: 220vh solid transparent;
 	float: right;
 }
@@ -342,7 +342,7 @@ a {
 	width: 0; 
 	height: 0; 
 			
-	border-top: 11vh solid #D0EC65; 
+	border-top: 11vh solid #efece3; 
 	border-right: 220vh solid transparent;
 	float: left;
 }
@@ -371,12 +371,12 @@ a {
 	opacity: 0.8;
 }
 
-.round img {
+.round img, #aktivitas img {
 	opacity: .5;
 	transition: opacity .5s ease;
 }
 
-.round img:hover {
+.round img:hover, #aktivitas img:hover {
 	opacity: 1;
 	transition: opacity .5s ease;
 }
@@ -398,7 +398,7 @@ header {
 }
 header.smaller {
 	position: fixed;
-	background-color: #EDF252;
+	background-color: #e1dccc;
 	height: 60px;
 	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2)
 }
@@ -446,7 +446,7 @@ header ul li img {
 }
 
 
-/*----tes----*/
+/*----SLIDER----*/
 
 .rslides {
   position: relative;
@@ -482,6 +482,7 @@ header ul li img {
   border: 0;
 }
 
+/*---KOMENTAR---*/
 #peoplesay {
 	min-height: 400px;
 	text-align: center;
@@ -503,4 +504,15 @@ header ul li img {
 #peoplesay .g4:hover .people {
 	opacity: 1;
 	transition: opacity .5s ease;
+}
+.shadow {
+	box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.3)
+}
+
+/*---footer---*/
+#footer ul {
+	padding-left: 0;
+}
+#footer ul li {
+	list-style-type: none;
 }
