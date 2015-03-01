@@ -209,10 +209,12 @@ a {
 	padding-top: 5%;
 	margin-bottom: 1%;
 	color: #FFFDF8;
+	overflow: hidden;
 }
 .paralax p.desc {
 	font-size: 2em;
 	color: #FFFDF8;
+	overflow: hidden;
 }
 #paralax1 {
 	width: 100%;
