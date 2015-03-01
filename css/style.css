@@ -245,6 +245,15 @@ a {
 		background-size: 100% 100%;
 		background-position: center;
 }	
+#footer-copy {
+	background-color: #EDF252;
+}
+#copy-content {
+	float: left;
+}
+#copy-design {
+	float: right;
+}
 /*
 #top {
 	width: 100%;
