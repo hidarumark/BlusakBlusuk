@@ -400,7 +400,6 @@ header ul li {
 	display: inline;
 	height: 50px;
 }
-
 header ul li a {
 	text-decoration: none;
 	font-size: 1.3em;
@@ -427,6 +426,12 @@ header ul#nav-right a {
 header ul#nav-right li#mo-nav {
 	display: none;
 	padding-left: 1em;
+}
+header ul li img {
+	width: 16px;
+	height: 16px;
+	margin-right: 16px;
+	display: none;
 }
 
 
