@@ -112,7 +112,7 @@ body {
 	font-size: 16px;
 	font-weight: 400;
 	font-family: segoe ui, open sans, helvetica;
-	color: #5C5C5C;
+	color: #D5D96C;
 }
 h1,h2,h3 {
 	font-family: 'roboto slab', open sans;
@@ -178,23 +178,24 @@ a {
 /*---Section---*/
 #banner {
 	width: 100%;
-	height: 100vh;
+	height: 110vh;
 	/*background:
 		linear-gradient(
 	    rgba(255, 255, 255, 0.2),
 	    rgba(255, 255, 255, 0.2)
 	    ),
-	    url(../img/sunset.jpg) no-repeat fixed; */
+	    url(../img/sunset.jpg) no-repeat fixed; 
+	*/
 	background: linear-gradient(
-	    rgba(0, 0, 0, 0.6),
-	    rgba(255, 255, 255, 0.1)
+	    rgba(0, 0, 0, 0.7),
+	    rgba(0, 0, 0, 0.1)
 	    );
 	background-size: 100% 100%;
 	background-position: center;
 }
 .content {
 	width: 100%;
-	background-color: #efece3;
+	background-color: #7c8c03;
 	float: left;
 }
 .paralax {
@@ -208,20 +209,20 @@ a {
 	font-weight: 400;
 	padding-top: 5%;
 	margin-bottom: 1%;
-	color: #FFFDF8;
+	color: #D5D96C;
 	overflow: hidden;
 }
 .paralax p.desc {
 	font-size: 2em;
-	color: #FFFDF8;
+	color: #D5D96C;
 	overflow: hidden;
 }
 #paralax1 {
 	width: 100%;
 	background:
 		linear-gradient(
-	    rgba(255, 255, 255, 0.3),
-	    rgba(255, 255, 255, 0.3)
+	    rgba(0, 0, 0, 0.7),
+	    rgba(0, 0, 0, 0.7)
 	    ),
 	    url(../img/ngobaran.jpg) no-repeat fixed;
 		background-size: 100% 100%;
@@ -231,8 +232,8 @@ a {
 	width: 100%;
 	background:
 		linear-gradient(
-	    rgba(255, 255, 255, 0.3),
-	    rgba(255, 255, 255, 0.3)
+	    rgba(0, 0, 0, 0.7),
+	    rgba(0, 0, 0, 0.7)
 	    ),
 	    url(../img/sunset.jpg) no-repeat fixed;
 		background-size: 100% 100%;
@@ -240,15 +241,15 @@ a {
 #kontak {
 	background:
 		linear-gradient(
-	    rgba(255, 255, 255, 0.5),
-	    rgba(255, 255, 255, 0.5)
+	    rgba(0, 0, 0, 0.7),
+	    rgba(0, 0, 0, 0.7)
 	    ),
 	    url(../img/map.png);
 		background-size: 100% 100%;
 		background-position: center;
 }	
 #footer-copy {
-	background-color: #e1dccc;
+	background-color: #465902;
 }
 #copy-content {
 	float: left;
@@ -334,7 +335,7 @@ a {
 	width: 0; 
 	height: 0; 
 			
-	border-bottom: 11vh solid #efece3; 
+	border-bottom: 11vh solid #7c8c03; 
 	border-left: 220vh solid transparent;
 	float: right;
 }
@@ -342,7 +343,7 @@ a {
 	width: 0; 
 	height: 0; 
 			
-	border-top: 11vh solid #efece3; 
+	border-top: 11vh solid #7c8c03; 
 	border-right: 220vh solid transparent;
 	float: left;
 }
@@ -389,7 +390,10 @@ header {
 	height: 60px;
 	position: fixed;
 	z-index: 2;
-	background-color: rgba(255,255,255,0);
+	background: linear-gradient(
+	    rgba(0, 0, 0, 0.3),
+	    rgba(0, 0, 0, 0)
+	    );		
 	transition: all 0.2s;
 	-webkit-transition: all 0.2s;
 	-moz-transition: all 0.2s;
@@ -398,7 +402,11 @@ header {
 }
 header.smaller {
 	position: fixed;
-	background-color: #e1dccc;
+	background: linear-gradient(
+	    rgba(0, 0, 0, 0),
+	    rgba(0, 0, 0, 0)
+	    );	
+	background-color: #465902;	
 	height: 60px;
 	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2)
 }
@@ -419,7 +427,7 @@ header ul li a {
 	transition: font 0.3s ease
 }
 header.smaller ul li a{
-	color: #5C5C5C;
+	color: #D5D96C;
 	font-size: 1em;
 }
 header ul#nav-left {
@@ -478,7 +486,7 @@ header ul li img {
   height: auto;
   float: left;
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   border: 0;
 }
 

@@ -125,7 +125,7 @@
       <div class="segitiga-a"></div>
       <div class="container">
         <div class="g12">
-          <h2 class="right">What the people say</h2>
+          <h1 class="right">Komentar</h1>
         </div> <!-- Akhir Grid-->
         <div class="g4">
           <div class="bar round">
@@ -224,13 +224,15 @@
       <div class="overlay"></div>
     </div>
 
-	<script src="js/classie.js"></script>
   <script src="js/jquery-1.11.2.min.js"></script>	
+  <script src="js/responsiveslides.min.js"></script>
+  <script src="js/classie.js"></script>
+
 	<script>
 	    function init() {
 	        window.addEventListener('scroll', function(e){
 	            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-	                shrinkOn = 400,
+	                shrinkOn = 50,
 	                header = document.querySelector("header");
 	            if (distanceY > shrinkOn) {
 	                classie.add(header,"smaller");
@@ -252,9 +254,6 @@
         $("#nav-right").addClass("nav-hide")
     });    
   </script>   
-
-  <script src="js/jquery-1.8.3.min.js"></script>
-  <script src="js/responsiveslides.min.js"></script>
 
   <script>
     $(function() {
