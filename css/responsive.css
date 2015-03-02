@@ -273,6 +273,8 @@
 	}
 	*/
 }
+
+/*Fix Scrolling Bug On Webkit/Chromium*/
 @media screen and (-webkit-min-device-pixel-ratio:0) {
 	#paralax1 {	
 		background-attachment: scroll;
