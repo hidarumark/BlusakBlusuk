@@ -203,7 +203,7 @@ a {
 	width: 100%;
 	float: left;
 	height: 600px;
-	text-align: center;
+	text-align: center;	
 }
 .paralax h1.highlight{
 	font-size: 5em;
@@ -218,16 +218,17 @@ a {
 	color: #D5D96C;
 	overflow: hidden;
 }
-#paralax1 {
+#paralax1 {	
 	width: 100%;
 	background:
 		linear-gradient(
 	    rgba(0, 0, 0, 0.7),
 	    rgba(0, 0, 0, 0.7)
 	    ),
-	    url(../img/ngobaran.jpg) no-repeat fixed;
-		background-size: 100% 100%;
-		background-position: center;
+	    url(../img/ngobaran.jpg) no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	background-position: center;
 }
 #paralax2 {
 	width: 100%;
@@ -236,8 +237,10 @@ a {
 	    rgba(0, 0, 0, 0.7),
 	    rgba(0, 0, 0, 0.7)
 	    ),
-	    url(../img/sunset.jpg) no-repeat fixed;
-		background-size: 100% 100%;
+	    url(../img/sunset.jpg) no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;	
+	background-position: center;	
 }
 #kontak {
 	background:
@@ -407,6 +410,8 @@ header {
 	-moz-transition: all 0.2s;
 	-ms-transition: all 0.2s;
 	-o-transition: all 0.2s;
+	/*Fix Scrolling Bug On Webkit/Chromium*/
+	-webkit-transform: translateZ(0);
 }
 header.smaller {
 	position: fixed;

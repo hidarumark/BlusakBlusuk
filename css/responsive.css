@@ -273,3 +273,11 @@
 	}
 	*/
 }
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	#paralax1 {	
+		background-attachment: scroll;
+	}
+	#paralax2 {
+		background-attachment: scroll;
+	}
+}
