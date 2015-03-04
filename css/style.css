@@ -114,7 +114,7 @@ body {
 	font-family: segoe ui, open sans, helvetica;
 	color: #D5D96C;
 }
-h1,h2,h3 {
+h1,h2,h3,.dest-text {
 	font-family: 'roboto slab', open sans;
 }
 h1 {
@@ -205,19 +205,6 @@ a {
 	height: 600px;
 	text-align: center;	
 }
-.paralax h1.highlight{
-	font-size: 5em;
-	font-weight: 400;
-	padding-top: 5%;
-	margin-bottom: 1%;
-	color: #D5D96C;
-	overflow: hidden;
-}
-.paralax p.desc {
-	font-size: 2em;
-	color: #D5D96C;
-	overflow: hidden;
-}
 #paralax1 {	
 	width: 100%;
 	background:
@@ -260,6 +247,35 @@ a {
 }
 #copy-design {
 	float: right;
+}
+
+/*Section Content*/
+.dest-text {
+	position: absolute;
+	width: 100%;
+	color: #ffffff;
+}
+.round img, #aktivitas img {
+	opacity: .5;
+	transition: opacity .5s ease;
+	z-index: 2;
+}
+.round img:hover, #aktivitas img:hover {
+	opacity: 1;
+	transition: opacity .5s ease;
+}
+.paralax h1.highlight{
+	font-size: 5em;
+	font-weight: 400;
+	padding-top: 5%;
+	margin-bottom: 1%;
+	color: #D5D96C;
+	overflow: hidden;
+}
+.paralax p.desc {
+	font-size: 2em;
+	color: #D5D96C;
+	overflow: hidden;
 }
 /*
 #top {
@@ -318,21 +334,6 @@ a {
 	float: left;
 }
 
-/*Teks*/
-.caption {
-	position: inherit;
-	padding-top: 15%;
-	text-shadow: 5px 5px 10px rgba(0,0,0,1);
-}
-.title {
-	font-size: 9em;
-	font-family: Chapparal pro, georgia;
-}
-.subtitle {
-	margin-top: -1em;
-	font-size: 2.5em;
-}
-
 /*Bangun*/
 .segitiga-a{
 	margin-top: -10vh;
@@ -383,16 +384,6 @@ a {
 	margin: .5em;
 }
 
-.round img, #aktivitas img {
-	opacity: .5;
-	transition: opacity .5s ease;
-}
-
-.round img:hover, #aktivitas img:hover {
-	opacity: 1;
-	transition: opacity .5s ease;
-}
-
 /*---Navigasi---*/
 header {
 	display: inline-block;
@@ -400,7 +391,7 @@ header {
 	width: 100%;
 	height: 60px;
 	position: fixed;
-	z-index: 2;
+	z-index: 100;
 	background: linear-gradient(
 	    rgba(0, 0, 0, 0.3),
 	    rgba(0, 0, 0, 0)
