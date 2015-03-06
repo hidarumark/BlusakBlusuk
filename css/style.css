@@ -397,10 +397,10 @@ header {
 	    rgba(0, 0, 0, 0)
 	    );		
 	transition: all 0.2s;
-	-webkit-transition: all 0.2s;
-	-moz-transition: all 0.2s;
-	-ms-transition: all 0.2s;
-	-o-transition: all 0.2s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
 	/*Fix Scrolling Bug On Webkit/Chromium*/
 	-webkit-transform: translateZ(0);
 }
@@ -412,7 +412,7 @@ header.smaller {
 	    );	
 	background-color: #465902;	
 	height: 60px;
-	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2)
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
 }
 header ul {
 	list-style-type: none;
@@ -458,7 +458,7 @@ header ul li img {
 }
 
 
-/*----SLIDER----*/
+/*----SLIDER----
 
 .rslides {
   position: relative;
@@ -500,7 +500,39 @@ header ul li img {
 	font-size: 3em;
 	font-weight: 500;
 	margin-top: -8.5em;
+} */
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
 }
+
+body { 
+	margin: 0; 
+} 
+div#slider { 
+	overflow: hidden;  
+}
+div#slider figure img { 
+	width: 20%; height: 110vh; float: left;
+}
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; 
+  z-index: -2;
+}
+
 
 /*---KOMENTAR---*/
 #peoplesay {
