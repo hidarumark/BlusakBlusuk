@@ -76,9 +76,9 @@
 }
 
 .modal-box {
-	margin: 0.5%;
+	margin-left: 0%;
 	padding: 1%;
-	width: auto;
+	width: 98%;
 	height: auto;
 	background-color: #593B02;
 	color: #D5D96C;
