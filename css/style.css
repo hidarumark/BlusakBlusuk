@@ -281,8 +281,8 @@ a:hover {
 	overflow: hidden;
 }
 .aktivitas-nama {
-	margin-bottom: 10px;
 	text-align: center;
+	overflow: hidden;
 }
 #kntk {
 	padding-top: 0em;
@@ -296,17 +296,21 @@ a:hover {
 	background-color: #FFFDF8;
 	color: #7c8c03;
 	border-radius: 10px;
-	visibility: hidden;
 	position: relative;
+	opacity: 0;
+	transition: opacity .5s ease;
 }
 .kontak-icon {
 	opacity: 0.6;
+	transition: opacity .5s ease;
 }
 .kontak-icon:hover {
 	opacity: 1;
+	transition: opacity .5s ease;
 }
 .kontak-icon:hover ~ .label {
-	visibility: visible;
+	opacity: 1;
+	transition: opacity .5s ease;
 }
 
 /*---Elemen---*/
@@ -375,8 +379,8 @@ a:hover {
 .kontak-icon {
 	background-color: #7c8c03;
 	margin: 0px auto;
-	width: 30%;
-	height: 30%;
+	width: 35%;
+	height: 35%;
 	position: relative;
 }
 
@@ -387,17 +391,16 @@ a:hover {
 }
 
 
-/*Uji Coba*/
+/*Tombol*/
 .buton  {
-	background-color: #465902;
-	color: #D5D96C;
+	background-color: #D5D96C;
+	color: #7c8c03;
 	font-family: chaparral pro, Open Sans;
 	border: 0px;
 	padding: 0.4em;
 	margin: 0.4em;
 	font-size: 1.125em;
 	font-weight: 400;
-	color: #FFFDF8;
 	cursor: pointer;
 	border-radius: 5px;
 	text-align: center;
@@ -413,6 +416,8 @@ a:hover {
 }
 
 .tiket {
+	background-color: #465902;
+	color: #D5D96C;
 	padding: 0.5em;
 	margin-left: 0em;
 	margin-right: 0em;
@@ -555,26 +560,6 @@ header ul li img {
 	box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.3)
 }
 
-/*---contact---
-.contact {
-	margin-left: auto;
-	margin-right: auto;
-	background-color: rgba(124, 140, 3, 1);
-	opacity: .6;
-	width: 150px;
-	height: 150px;
-	background-size: 100% auto;
-	transition: opacity .5s ease;
-}
-
-.contact:hover {
-	opacity: 1;
-}
-
-.contact img {
-	padding-top: 40px;
-}
-*/
 /*---footer---*/
 #footer ul {
 	padding-left: 0;

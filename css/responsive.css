@@ -38,6 +38,8 @@
 		display: block;
 		cursor: pointer;
 		font-size: 1em;
+	}
+	header ul#nav-right li#mo-nav a {
 		color: #5C5C5C;
 	}
 	header ul li img {
@@ -61,10 +63,7 @@
 	#nav-right:target {
 		display: block;
 	}
-	#banner {
-		height: 115vh;
-	}
-	.rslides li img {
+	#slider figure img {
 		height: 115vh;
 	}
 	.paralax h1.highlight{
@@ -74,7 +73,20 @@
 	.paralax p.desc {
 		font-size: 1.5em;
 	}
-
+	.aktivitas-nama {
+		border-bottom: 1px solid;
+		padding-bottom: 1em;
+		margin-bottom: 20px;
+	}
+	#paralax1 {
+		background-size: auto 100%;
+	}
+	#paralax2 {
+		background-size: auto 100%;
+	}
+	#kontak {
+		background-size: auto 80%;
+	}
 	#copy-content {
 		float: none;
 		text-align: center;
@@ -117,95 +129,6 @@
 		font-size: 18px;
 	}	
 
-	/*
-	#top {
-		padding-left: 10%;
-		width: 90%;
-	}
-	#main {
-		background-size: auto 100%;
-		background-position: bottom right;
-		background: url(../img/bg.jpg);
-		min-height: 560px;
-	}
-	.title {
-		font-size: 4em;
-	}
-	.subtitle {
-		margin-top: -1em;
-		font-size: 1.125em;
-	}
-	#box-login {
-		margin-top: 20%;
-		width: 100%;
-	}
-
-	.sidebar {
-		width: 90%;
-		height: auto;
-		z-index: 2000;
-		top: 0px;
-	}
-	.menu-bt {
-		display: block;
-		margin: 0 0 0 -15px;
-		padding: 0;
-		position: fixed;
-	}	
-	#menu {
-		height: 100%;
-		height: 100vh;
-		display: none;
-		padding-top: 60px;
-		margin: 0;
-	}
-	input[type=checkbox]:checked ~ #menu{
-	    display: block;
-	}
-	.logo {
-		font-size: 1.75em;
-		padding-top: 0.3em;
-	}
-	.main-logo {
-		display: none;
-	}
-	.logout {
-		display: block;
-	}
-	.user-nama {
-		display: none;
-	}
-
-	.isi {
-		width: 100%;
-	}
-	.isi-heading {
-		top: 60px;
-		width: 100%;
-		position: absolute;
-	}
-	.isi-content {
-		padding-top: 150px;
-	}
-	.float-circle {
-		right: 12%;
-	}
-	.modal:target {
-		margin-top:-100px;
-	}
-	.table-fold {
-		position: relative;
-		overflow-x: scroll;
-	}
-	.modern-table {
-		min-width: 480px;
-		width: auto;
-	}
-
-	.modal-content {
-		margin-top:-60px;
-	}
-	*/
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
@@ -236,63 +159,7 @@
 		width: 98.0%;
 	}	
 	/*---Style---*/
-	/*
-	#main {
-		background-size: auto 100%;
-		background-position: bottom right;
-	}
-	.title {
-		margin-top: -5%;
-		font-size: 6em;
-	}
-	.subtitle {
-		margin-top: -1em;
-		font-size: 2.25em;
-	}
-	#box-login {
-		margin-top: 10%;
-		width: 100%;
-	}
 
-	.sidebar {
-		width: 90%;
-		height: auto;
-		z-index: 2000;
-		top: 0px;
-	}
-	.menu-bt {
-		display: block;
-		margin: 0 0 0 -15px;
-		padding: 0;
-		position: fixed;
-	}	
-	#menu {
-		height: 100%;
-		height: 100vh;
-		display: none;
-		padding-top: 60px;
-		margin: 0;
-	}
-	input[type=checkbox]:checked ~ #menu{
-	    display: block;
-	}
-	.logo {
-		font-size: 1.75em;
-		padding-top: 0.3em;
-		padding-left: 1.125em;
-
-	}
-
-	.isi {
-		width: 100%;
-	}
-	.isi-content {
-		padding-top: 120px;
-	}
-	.float-circle {
-		right: 8%;
-	}
-	*/
 }
 
 /*Fix Scrolling Bug On Webkit/Chromium*/
