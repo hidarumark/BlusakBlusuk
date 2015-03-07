@@ -448,7 +448,6 @@ header ul#nav-right a {
 }
 header ul#nav-right li#mo-nav {
 	display: none;
-	padding-left: 1em;
 }
 header ul li img {
 	width: 16px;
@@ -456,7 +455,6 @@ header ul li img {
 	margin-right: 16px;
 	display: none;
 }
-
 
 /*----SLIDER----
 

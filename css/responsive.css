@@ -28,6 +28,7 @@
 		height: 100vh;
 		text-align: left;
 		background-color: rgba(0,0,0,0.9);
+		display: none;
 	}
 	header ul#nav-right li {
 		display: list-item;
@@ -36,12 +37,15 @@
 	header ul#nav-right li#mo-nav {
 		display: block;
 		cursor: pointer;
-		font-size: 1.3em;
+		font-size: 1em;
 		color: #5C5C5C;
 	}
 	header ul li img {
 		display: inline-block;
 	}
+	header ul#nav-left {
+		margin-top: 8px;
+	}	
 	header ul#nav-left li#mo-btn {
 		display: inline-block;
 		cursor: pointer;
@@ -51,8 +55,11 @@
 		font-size: 1.3em;
 		color: #FFFDF8;
 	}
-	.nav-hide {
+	#nav-left:target ~ #nav-right {
 		display: none;
+	}
+	#nav-right:target {
+		display: block;
 	}
 	#banner {
 		height: 115vh;
