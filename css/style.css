@@ -202,7 +202,7 @@ a {
 .paralax {
 	width: 100%;
 	float: left;
-	height: 600px;
+	min-height: 600px;
 	text-align: center;	
 }
 #paralax1 {	
