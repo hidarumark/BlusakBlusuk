@@ -363,6 +363,8 @@ a {
 /*Uji Coba*/
 .buton  {
 	background-color: #465902;
+	color: #D5D96C;
+	font-family: chaparral pro, Open Sans;
 	border: 0px;
 	padding: 0.4em;
 	margin: 0.4em;
@@ -371,6 +373,7 @@ a {
 	color: #FFFDF8;
 	cursor: pointer;
 	border-radius: 5px;
+	text-align: center;
 }
 
 .buton:hover  {
@@ -378,10 +381,17 @@ a {
 }
 
 .buton.more {
-	color: #D5D96C;
-	font-family: chaparral pro, Open Sans;
 	padding: .5em;
 	margin-left: -0.1em;
+}
+
+.tiket {
+	padding: 0.5em;
+	margin-left: 0em;
+	margin-right: 0em;
+	padding: 0.4em 0em 0.4em 0em;
+	width: 100%;
+	float: left;
 }
 
 /*---Navigasi---*/
