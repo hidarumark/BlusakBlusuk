@@ -20,7 +20,7 @@
 	 	</ul>
 		<ul id="nav-right">
       <li id="mo-nav"><a class="switch" href="#nav-left"><img src="img/ico/close.png" alt="">Close</a></li>
-	 		<li><a href="#banner"><img src="img/ico/home.png" alt="">Home</a></li>
+	 		<li><a href="#slider"><img src="img/ico/home.png" alt="">Home</a></li>
 	 		<li><a href="#destinasi"><img src="img/ico/dest.png" alt="">Destinasi</a></li>
 	 		<li><a href="#aktivitas"><img src="img/ico/aktivitas.png" alt="">Aktivitas</a></li>
 	 		<li><a href="#peoplesay"><img src="img/ico/komen.png" alt="">Komentar</a></li>
@@ -190,7 +190,11 @@
         </div> <!-- Akhir Grid-->
 
         <div class="g12 space"></div> <!-- Akhir Grid-->
-       		<a href="#moreact" class="buton more">Lihat lebih banyak Aktivitas Lainnya</a>
+
+        <div class="g12">
+       		<a href="#moreact" class="buton more">Lihat Aktivitas Lainnya</a>
+        </div>
+
         <div class="g12 space"></div> <!-- Akhir Grid-->
         
       </div> <!-- Akhir Container-->
@@ -257,11 +261,11 @@
       <div class="segitiga-a"></div>
       <div class="container">
         <div class="g3">
-          <h3>Hubungi Kami</h3>
-          <a href="http://www.facebook.com/">Facebook</a><br />
-          <a href="http://www.twitter.com">Twitter</a><br />
-          <a href="http://Instagram.com">Instagram</a><br />
-          <a href="mailto:wahid.dulrohman@gmail.com">E-mail</a><br />
+          <h3>Sosial Media</h3>
+          <a href="http://www.facebook.com/" target="_blank">Facebook</a><br />
+          <a href="http://www.twitter.com/" target="_blank">Twitter</a><br />
+          <a href="http://Instagram.com/" target="_blank">Instagram</a><br />
+          <a href="http://www.youtube.com/ target="_blank"">YouTube</a><br />
         </div> <!-- Akhir Grid-->
         <div class="g3">
           <h3>Kontribusi</h3>
@@ -684,8 +688,6 @@
         </div>
       </div>
 
-  <script src="js/jquery-1.11.2.min.js"></script>	
-  <script src="js/responsiveslides.min.js"></script>
   <script src="js/classie.js"></script>
 	<script>
 	    function init() {
@@ -705,23 +707,5 @@
 	    window.onload = init();
 	</script>
 
-  <script>
-    $("#mo-btn").click(function() {
-        $("#nav-right").removeClass("nav-hide")
-    });    
-    $("#mo-nav").click(function() {
-        $("#nav-right").addClass("nav-hide")
-    });    
-  </script>   
-
-  <script>
-    $(function() {
-      $(".rslides").responsiveSlides({
-        speed: 1200,
-        timeout: 4000,
-        random: true
-      });
-    });
-  </script>
     </body>
 </html>
