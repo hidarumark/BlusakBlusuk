@@ -33,6 +33,7 @@
 	height: 60px;
 	border-bottom: 2px solid #BDBC60;
 	position: relative;
+	overflow: hidden;
 }
 
 .modal-copy {
